@@ -1,0 +1,187 @@
+/* Added position relative as an ancestor for the footer and min height so html is always 100% of viewport */
+html {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100%;
+}
+
+/* set margin bottom at 58px to match footer height and padding of 25px to make sure there's always some space between body and footer. */
+body {
+    margin: 0 0 58px;
+    padding: 0 0 25px;
+    height: 100%;
+    background-image: url("../images/papyrus.png");
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+
+h1, h3 {
+    color: #ffffff;
+}
+
+h2 {
+    color: #4aaaa5;
+}
+
+/* h3 is only used as the portfolio image text so adjusted the width and padding to make it fit the images */
+h3 {
+    background-color: #4aaaa5;
+    width: 220px;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* position fixed so header always stays at the top when scrolling and z index of 2 to always put it on top of other content */
+#header {
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 2px #cccccc;
+    z-index: 2;
+}
+
+#name {
+    background-color: #4aaaa5;
+    width: fit-content;
+    padding: 5px 20px;
+    float: left;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.navigation {
+    float: right;
+    margin-top: 20px;
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #777777;
+}
+
+.navigation a:hover {
+    color: #4aaaa5;
+}
+
+.nav_item {
+    border-right: solid #cccccc 1px;
+    padding: 0 20px;
+}
+
+/* gets rid of the padding on the right side of the last navigation item so its aligned with content container */
+.end_nav_item {
+    padding: 0 0 0 20px;
+
+}
+
+.content {
+    margin-top: 121px;
+}
+
+section {
+   background-color: #ffffff;
+   border: solid 1px #cccccc;
+   padding: 25px;
+   box-sizing: border-box;  
+}
+
+#self_picture {
+    float: left;
+    margin: 20px 20px 20px 0px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Position absolute and bottom 0 to make sure the footer is always at the bottom */
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: #666666;
+    text-align: center;
+    color: #ffffff;
+    border-top: solid 8px  #4aaaa5;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;    
+}
+
+/* footer text container to set the text at the bottom of the footer rather than the top */
+#footer_text {
+   position: absolute;
+   width: 100%;
+   bottom: 0;
+   font-size: 12px;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: solid 1px #dddddd;
+    box-sizing: border-box;   
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    border: solid 1px #dddddd;
+    box-sizing: border-box;
+}
+
+input[type=submit]  {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 30px;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: #777777;
+}
+
+#portfolio {
+    width: 500px;
+}
+
+.port_item {
+    position: relative;
+    float: left;
+    margin: 20px 30px 20px 0px;
+}
+
+.port_name {
+    position: absolute;
+    bottom: 10px;
+}
