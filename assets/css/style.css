@@ -185,3 +185,65 @@ input[type=submit]:hover {
     position: absolute;
     bottom: 10px;
 }
+
+@media screen and (max-width: 640px) {
+    
+    #header {
+        position: static;
+        height: 125px;
+    }
+    #name {
+        float: none;
+        width: auto;
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .navigation {
+        float: none;
+        margin-top: 10px;
+    }
+
+    .navigation ul {
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .content {
+        margin: 30px;   
+    }
+
+    #self_picture {
+        float: none;
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        max-width: 640px;
+    }
+
+    #portfolio {
+        width: 100%;
+    }
+    
+    .port_item {
+        float: none;
+        margin: 20px 0;    
+    }
+    .port_item img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .port_name {
+        width:100%;
+    }
+    
+    h3 {
+        width: 100%;
+    }
+
+}    
