@@ -247,3 +247,19 @@ input[type=submit]:hover {
     }
 
 }    
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+    .container {
+        width: 728px;
+    }
+     #self_picture {
+         width: 240px;
+         height: auto;
+     }
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+    .container {
+        width: 960px;
+    }
+}
