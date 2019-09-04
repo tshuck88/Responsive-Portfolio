@@ -186,6 +186,42 @@ input[type=submit]:hover {
     bottom: 10px;
 }
 
+@media screen and (max-width: 980px) {
+    .container {
+        max-width: 100%;
+    }
+    .content {
+        margin: 121px 30px 30px;  
+    }
+    #name {
+        margin-left: 30px;
+    }
+    .navigation {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 728px;
+        max-width: 100%;
+    }
+     #self_picture {
+         width: 240px;
+         height: auto;
+     }
+     .content {
+        margin: 121px 30px 30px;   
+    }
+    #name {
+        margin-left: 30px;
+    }
+    .navigation {
+        margin-right: 30px;
+    }
+}
+
+
 @media screen and (max-width: 640px) {
     
     #header {
@@ -196,15 +232,18 @@ input[type=submit]:hover {
         float: none;
         width: auto;
         text-align: center;
+        margin-left: 0;
     }
     .container {
-        width: 100%;
+        width: 640px;
+        max-width: 100;
         margin: 0;
     }
     
     .navigation {
         float: none;
         margin-top: 10px;
+        margin-right: 0;
     }
 
     .navigation ul {
@@ -247,19 +286,3 @@ input[type=submit]:hover {
     }
 
 }    
-
-@media screen and (min-width: 641px) and (max-width: 768px) {
-    .container {
-        width: 728px;
-    }
-     #self_picture {
-         width: 240px;
-         height: auto;
-     }
-}
-
-@media screen and (min-width: 769px) and (max-width: 980px) {
-    .container {
-        width: 960px;
-    }
-}
