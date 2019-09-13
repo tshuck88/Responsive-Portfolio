@@ -185,6 +185,9 @@ input[type=submit]:hover {
     position: absolute;
     bottom: 10px;
 }
+a {
+    text-decoration: none;
+}
 
 @media screen and (max-width: 980px) {
     .container {
